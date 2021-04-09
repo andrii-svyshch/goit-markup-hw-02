@@ -56,19 +56,31 @@ body {
 }
 
 .link {
-  color: inherit;
+  color: var(--title-text-color);
   text-decoration: none;
+}
+
+.active-link {
+  color: var(--accent-color);
 }
 
 .list {
   list-style: none;
 }
 
-.hero {
-  color: var(--base-bg-color);
-  background-color: var(--text-color);
-  text-transform: uppercase;
+.hero-section {
+  background-color: var(--secondary-bg-color);
   text-align: center;
+}
+
+.hero-title {
+  color: var(--base-bg-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button {
@@ -121,15 +133,14 @@ footer {
   color: var(--base-bg-color);
 }
 
-address {
-  font-style: inherit;
-}
-
 .post-address {
   color: var(--base-bg-color);
+  font-style: normal;
 }
-.contacts-footer {
+
+.footer-link {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 
 /* Portfolio */
